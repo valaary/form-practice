@@ -4,41 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
     <title>Form practice</title>
 </head>
 <body>
     <div class="wrapper">
-        <div class="text-column">
-            <div class="logo">
-                <img src="./logo.png" alt="logo">
-            </div>
-            <div class="form">
-                <form action="#" method="post">
-                    <div class="form-input">
-                        <label for="user-firstName"></label>
-                        <input type="text" id="user-firstName" name="user_firstName" placeholder="First name" minlength="1" maxlength="140" required>
-                        <label for="user-lastName"></label>
-                        <input type="text" id="user-lastName" name="user_lastName" placeholder="Last name" minlength="1" maxlength="140" required>
-                    </div>
-                    <div class="form-input">
-                        <label for="user-email"></label>
-                        <input type="email" id="user-email" name="user_email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-                        <label for="user-phone"></label>
-                        <input type="number" id="user-phone" name="user_phone" placeholder="Phone" pattern="/^0[012345689]\d{9}$/" required>
-                    </div>
-                    <div class="form-input">
-                        <label for="user-password"></label>
-                        <input type="password" id="user-password" name="user_password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
-                        <label for="user-confirmPas"></label>
-                        <input type="password" id="user-confirmPas" name="user_confirmPas" placeholder="Confirm password" required>
-                    </div>
-                    <button type="submit">Sing Up</button>
-                </form>
-                <p>Already have account? <spun>Log in</spun></p>
-            </div>
-        </div>
         <div class="image-column">
-            <img src="./image.jpg" alt="image">
+            <h1 class="image-column-text">Social media shared today, tomorrow or by location</h1>
+            <img class="phones" src="./phones.png" alt="phones">
+        </div>
+        <div class="right-column">
+            <div class="text-column">
+                <div class="logo">
+                    <img class="logo" src="./logo.png" alt="logo">
+                </div>
+                <div class="text">
+                    <h1>Create account</h1>
+                    <p>For business, band or celebrity.</p>
+                </div>
+                <div class="form">
+                    <form action="#" method="post">
+                        <div class="form-input">
+                            <div class="input-first-column">
+                                <div class="input">
+                                    <label for="user-firstName">First name</label>
+                                    <input type="text" id="user-firstName" name="user_firstName" minlength="1" maxlength="140" required>
+                                </div>
+                                <div class="input">
+                                    <label for="user-email">Email</label>
+                                    <input type="email" id="user-email" name="user_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                                </div>
+                                <div class="input">
+                                    <label for="user-password">Password</label>
+                                    <input type="password" id="user-password" name="user_password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                                </div>
+                            </div>
+                            <div class="second-column">
+                                <div class="input">
+                                    <label for="user-lastName">Last name</label>
+                                    <input type="text" id="user-lastName" name="user_lastName"  minlength="1" maxlength="140" required>
+                                </div>
+                                <div class="input">
+                                    <label for="user-phone">Phone number</label>
+                                    <input type="number" id="user-phone" name="user_phone"  pattern="/^0[012345689]\d{9}$/" required>
+                                </div>
+                                <div class="input">
+                                    <label for="user-confirmPas">Password confirm</label>
+                                    <input type="password" id="user-confirmPas" name="user_confirmPas"  required>
+                                </div>
+                            </div>  
+                            </div>
+                        <button type="submit">Create account</button>
+                        <button class="button-google" type="submit"> <img class="icon-google" src="./icon-google.png"> Sign-in with google</button>
+                    </form>
+            </div>
+            <p class="text-logIn">Already have account? <a href="#">Log in</a></p>
+            <div class="download-images">
+                <img class="download" src="./googlePlay.png" alt="google play">
+                <img class="download" src="./appleStore.png" alt="apple store">
+            </div>
+            </div>
         </div>
     </div>
 </body>

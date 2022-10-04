@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --font-family: 'Poppins';
+    --font-size: 14px;
+    --line-height: 140%;
+    --letter-spacing: -0.02em;
+    --color: #2D3748;
+
+    --button-font-family:'Poppins';
+    --button-color:#FFFFFF;
+    --button-font-weight: 600;
+    --button-font-size: 14px;
+    --button-line-height: 21px;
+    --button-letter-spacing: -0.02em;
+    --button-background:#007AFF;
+    --button-border-radius: 5px;
+}
+
+body{
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing);
+    color: var(--color);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 627px 739px;
+    align-items: center;
+}
+
+.form-input input {
+    width: 270px;
+    height: 48px;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+}
+
+.form-input {
+    display: flex;
+}
+
+.input-column {
+    flex-direction: column;
+}
+
+.input-first-column {
+    margin-right: 32px;
+}
+
+.input {
+    margin-bottom: 16px;
+}
+
+input[type="text"]
+{
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing);
+    color: var(--color);
+}
+
+.form-input label {
+    display: block;
+}
+
+button {
+    width: 270px;
+    height: 48px;
+    font-family: var(--button-font-family);
+    font-weight: var(--button-font-weight);
+    font-size: var(--font-size);
+    color: var(--button-color);
+    line-height:var(--button-line-height);
+    letter-spacing: var(--button-letter-spacing);
+    background: var(--button-background);
+    border-radius: var(--button-border-radius);
+    border: 0;
+    margin-top: 24px;
+}
+
+.logo {
+    width: 114.84px;
+    height: 48px;
+}
+
+.text {
+    margin-bottom: 37px;
+    margin-top: 37px;
+}
+
+.image-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 122, 255, 1);
+}
+
+.text-column {
+    margin-left: 72px;
+}
+
+.phones {
+    width: 366.51px;
+    height: 524.8px;
+}
+
+.image-column-text {
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    margin: 40px 111.2px 56.62px 111px;
+}
+
+.button-google {
+    background: #2D3748;
+    border-radius: 5px;
+    margin-left: 32px;
+}
+
+.icon-google {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 11.98px ;
+    margin-right: 5px;
+    position: relative;
+}
+
+.text-logIn {
+    text-align: center;
+    margin-top: 24px;
+}
+
+.download-images {
+    margin-top: 40px;
+}
+
+.download {
+    width: 135px;
+    height: 40px;
+    margin-right: 12px;
+}
+
+
